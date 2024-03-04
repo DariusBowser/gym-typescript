@@ -19,6 +19,7 @@ const Home = ({ setSelectedPage }: Props) => {
 
   return (
     <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
+
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
@@ -26,6 +27,7 @@ const Home = ({ setSelectedPage }: Props) => {
       >
         {/* MAIN HEADER */}
         <div className="z-10 mt-32 md:basis-3/5">
+
           {/* HEADINGS */}
           <motion.div
             className="md:-mt-20"
@@ -38,6 +40,7 @@ const Home = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
+
             <div className="relative">
               <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
                 <img alt="home-page-text" src={HomePageText} />
@@ -63,9 +66,11 @@ const Home = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
+
             <ActionButton setSelectedPage={setSelectedPage}>
               Join Now
             </ActionButton>
+
             <AnchorLink
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}
@@ -77,6 +82,7 @@ const Home = ({ setSelectedPage }: Props) => {
         </div>
 
         {/* IMAGE */}
+
         <div
           className="flex basis-3/5 justify-center md:z-10
               md:ml-40 md:mt-16 md:justify-items-end"
@@ -86,6 +92,7 @@ const Home = ({ setSelectedPage }: Props) => {
       </motion.div>
 
       {/* SPONSORS */}
+      
       {isAboveMediumScreens && (
         <div className="h-[150px] w-full bg-primary-100 py-10">
           <div className="mx-auto w-5/6">
